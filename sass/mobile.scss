@@ -1,0 +1,119 @@
+@import "../node_modules/patternfly/dist/sass/patternfly/_color-variables.scss";
+
+@import "fonts";
+@import "typography";
+@import "overrides";
+
+body {
+  font-family: $font-family-base;
+  font-size: $font-size-base;
+}
+@media (min-width: 910px) {
+  .mobile-header {
+    display: none;
+  }
+  .mobile-section {
+    display: none;
+  }
+  .mobile-footer {
+    display: none;
+    &--content {
+      display: none;
+    }
+  }
+  .hide-space-menu,
+  .show-space-menu {
+    display: none;
+  }
+}
+@media (max-width: 900px) {
+  .mobile-header {
+    display: grid;
+    grid-template-columns: 1fr 40px 40px;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    height: 75px;
+    background-color: $color-pf-black-200;
+    color: $color-pf-black-900;
+    box-shadow: 2px 2px 5px $color-pf-black-900;
+    .user-icon {
+      padding-left: 10px;
+    }
+  }
+  .mobile-section {
+    img {
+      width: 100%;
+    }
+  }
+  .mobile-footer {
+    &--content {
+      display: flex;
+      flex-direction: column;
+      grid-template-columns: 100vw;
+      grid-template-rows: 1fr 1fr 1fr 10px 1fr 1fr 10px 1fr 1fr 1fr;
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      left: 0;
+      background-color: $color-pf-black-700;
+      height: 100vh;
+      color: $color-pf-white;
+      &_item {
+        display: inline-flex;
+        align-items: center;
+        margin-top: 15px;
+        margin-bottom: 15px;
+        padding-left: 10px;
+        .fa {
+          margin-right: 10px;
+        }
+      }
+      &_divider {
+        background-color: $color-pf-black-900;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        padding-left: 10px;
+      }
+    }
+    &--bottom {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      justify-items: center;
+      align-items: center;
+      background-color: $color-pf-black-700;
+      height: 75px;
+      position: fixed;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      color: $color-pf-black-500;
+      font-size: 1.7em;
+      .menu-item--action {
+        &_home,
+        &_dashboard,
+        &_space,
+        &_planner,
+        &_create {
+          &:hover {
+            cursor: pointer;
+          }
+        }
+      }
+    }
+  }
+  .hide-space-menu {
+    overflow: hidden;
+    max-height: 0;
+    -webkit-transition: all .6s cubic-bezier(.79, .14, .15, .86);
+    transition: all .6s cubic-bezier(.79, .14, .15, .86);
+  }
+  .show-space-menu {
+    -webkit-transition: all .6s cubic-bezier(.79, .14, .15, .86);
+    transition: all .6s cubic-bezier(.79, .14, .15, .86);
+    max-height: 100vh;
+    overflow: hidden;
+  }
+}
