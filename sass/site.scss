@@ -16,24 +16,28 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   background-position-y: 80px;
-  @media (max-width: 900px) {
-    background: none;
-    background-size: cover;
-    background-repeat: no-repeat;
-  }
 }
 .background-cover-space {
   background: url('../images/osio_space.png');
   background-size: cover;
   background-repeat: no-repeat;
   background-position-y: 80px;
-  @media (max-width: 900px) {
-    background: none;
+}
+@media (max-width: 900px) {
+  .background-cover {
+    background: url('../images/osio_home_mobile.png');
     background-size: cover;
     background-repeat: no-repeat;
+    background-position-y: 80px;
+  }
+
+  .background-cover-space {
+    background: url('../images/osio_space_mobile.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-y: 80px;
   }
 }
-
 .dropdown-menu,
 .btn {
   font-size: $font-size-base !important;
@@ -55,6 +59,8 @@ a,
   transition: all .3s ease;
 }
 
-.fa-flask {
-  color: $color-pf-green;
+.dashboard {
+  img {
+    width: 100%;
+  }
 }

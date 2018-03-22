@@ -31,6 +31,9 @@
   }
 }
 @media (max-width: 900px) {
+  .desktop-hide {
+    display: none;
+  }
   .nav-grid-right {
     display: none !important;
   }
