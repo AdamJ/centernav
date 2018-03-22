@@ -2,6 +2,7 @@
 
 @import "fonts";
 @import "nav";
+@import "grid";
 @import "typography";
 @import "overrides";
 
@@ -14,7 +15,18 @@ body {
   background: url('../images/osio.png');
   background-size: cover;
   background-repeat: no-repeat;
-  background-position-y: 85px;
+  background-position-y: 80px;
+  @media (max-width: 900px) {
+    background: none;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+}
+.background-cover-space {
+  background: url('../images/osio_space.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position-y: 80px;
   @media (max-width: 900px) {
     background: none;
     background-size: cover;

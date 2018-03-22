@@ -17,8 +17,8 @@
     <!-- Custom Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Overpass+Mono" rel="stylesheet">
     <!-- Theme CSS -->
-    <link href="css/site.min.css" rel="stylesheet">
-    <!-- <link href="css/mobile.min.css" rel="stylesheet"> -->
+    <link href="../css/site.min.css" rel="stylesheet">
+    <link href="../css/mobile.min.css" rel="stylesheet">
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -26,96 +26,26 @@
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
         <![endif]-->
   </head>
-  <body class="background-cover">
+
+  <body class="background-cover-space">
     <div>
       <header>
         <nav class="nav-grid center-nav">
           <div class="nav-grid-left">
-          </div>
-          <div class="nav-grid-center">
-            <div class="dropdown">
-              <a id="dLabel" class="btn btn-link" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                <span class="center-nav--center_user-name">
-                  <span class="fa fa-home"></span> ajolicoeur
-                </span>
-                <span class="center-nav--center_vertical-divider"> | </span>
-                <span class="pficon-ok fa-lg"></span>
-                <span class="caret"></span>
+            <div class="center-nav--icon">
+              <a href="../index.html" class="btn btn-link">
+                <span class="fa fa-home fa-lg"></span>
               </a>
-              <ul class="dropdown-menu center-nav center-nav--user-dropdown_list" aria-labelledby="dLabel">
-                <div id="centerNavBase">
-                  <ul class="center-nav--user-list">
-                    <li class="center-nav--user-list_section">
-                      <p>SYSTEM STATUS</p>
-                      <ul>
-                        <li>
-                          <a href="#">
-                            <span class="fa fa-check-circle-o"></span> Jenkins
-                          </a>
-                        </li>
-                        <li>
-                          <a href="#">
-                            <span class="fa fa-check-circle-o"></span> Console
-                          </a>
-                        </li>
-                        <li>
-                          <a href="#">
-                            <span class="fa fa-check-circle-o"></span> Analytics
-                          </a>
-                        </li>
-                        <li>
-                          <a href="#">
-                            <span class="fa fa-check-circle-o"></span> GitHub
-                          </a>
-                        </li>
-                        <li>
-                          <a href="#">
-                            <span class="fa fa-check-circle-o"></span> Forge
-                          </a>
-                        </li>
-                      </ul>
-                    </li>
-                    <li class="center-nav--user-list_section">
-                      <p>JUMP TO CONSOLE</p>
-                      <ul>
-                        <li>
-                          <a href="#">Developer Studio</a>
-                        </li>
-                        <li>
-                          <a href="#">Fuse</a>
-                        </li>
-                        <li>
-                          <a href="#">OpenShift</a>
-                        </li>
-                        <li>
-                          <a href="#">
-                            <span class="fa fa-home"></span> OpenShift.io</a>
-                        </li>
-                      </ul>
-                    </li>
-                    <li class="center-nav--user-list_last">
-                      <p>CURRENT CONSOLE</p>
-                      <ul>
-                        <li>
-                          <a href="#">Documentation</a>
-                        </li>
-                        <li>
-                          <a href="#">About OpenShift.io</a>
-                        </li>
-                      </ul>
-                    </li>
-                  </ul>
-                </div>
-              </ul>
             </div>
-          </div>
-          <div class="nav-grid-right">
+            <div class="center-nav--divider">
+              |
+            </div>
             <div class="dropdown">
               <div class="center-nav--right">
                 <a id="spacesDropdown" class="btn btn-link" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                  <span class="fa fa-th-large fa-lg"></span>
+                  <span class="pficon-ok fa-lg"></span>
                 </a>
-                <ul class="dropdown-menu center-nav--spaces-dropdown_list" aria-labelledby="spacesDropdown">
+                <ul class="dropdown-menu center-nav--spaces-dropdown_list left-dropdown" aria-labelledby="spacesDropdown">
                   <div id="spacesDropdownBase">
                     <ul class="center-nav--user-list">
                       <li>
@@ -154,9 +84,19 @@
                 </ul>
               </div>
             </div>
-            <div class="center-nav--divider">
-              |
+          </div>
+          <div class="nav-grid-center">
+            <div class="dropdown">
+              <a id="dLabel" class="btn btn-link" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <span class="center-nav--center_user-name">
+                  <span class="fa fa-th-large"></span> osio_uxd
+                </span>
+                <span class="center-nav--center_vertical-divider"> &nbsp; </span>
+                <span class="caret"></span>
+              </a>
             </div>
+          </div>
+          <div class="nav-grid-right">
             <div class="center-nav--icon">
               <a href="#" class="btn btn-link">
                 <span class="fa fa-search"></span>
@@ -170,7 +110,16 @@
               Dashboard
             </a>
             <a class="btn btn-link">
-              User Settings
+              Analyze
+            </a>
+            <a class="btn btn-link">
+              Plan
+            </a>
+            <a class="btn btn-link">
+              Create
+            </a>
+            <a class="btn btn-link">
+              Space Settings
             </a>
           </div>
         </nav>
@@ -184,6 +133,7 @@
     <!-- PatternFly's JavaScript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/patternfly/3.41.0/js/patternfly.min.js"></script>
     <!-- Site JavaScript -->
-    <script src="js/site.min.js"></script>
+    <script src="../js/site.min.js"></script>
   </body>
+
 </html>
