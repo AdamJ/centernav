@@ -11,14 +11,76 @@ body {
   font-size: $font-size-base;
   overflow-x: hidden;
 }
+.hide {
+  display: none;
+}
+.show {
+  display: block;
+}
+.knockout-top-to-bottom {
+  &:before,
+  &:after {
+    content: "";
+    position: absolute;
+    height: 25px;
+  }
+  &:before {
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#393f44), to(transparent));
+    background-image: -webkit-linear-gradient(#393f44, transparent);
+    background-image: -moz-linear-gradient(#393f44, transparent);
+    background-image: -o-linear-gradient(#393f44, transparent);
+    z-index: -2;
+  }
+  &:after {
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+  }
+}
 .background-cover {
-  background: url('../images/osio.png');
+  background: url('../images/HomeDashboard.png');
   background-size: cover;
   background-repeat: no-repeat;
   background-position-y: 80px;
 }
 .background-cover-space {
-  background: url('../images/osio_space.png');
+  background: url('../images/SpaceDashboard.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position-y: 80px;
+}
+.background-cover-user-settings {
+  background: url('../images/UserSettings.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position-y: 80px;
+}
+.background-cover-space-settings {
+  background: url('../images/Areas.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position-y: 53px;
+}
+.background-cover-plan {
+  background: url('../images/Planner.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position-y: 53px;
+}
+.background-cover-create {
+  background: url('../images/Create.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position-y: 53px;
+}
+.background-cover-all-spaces {
+  background: url('../images/ViewAllSpaces.png');
   background-size: cover;
   background-repeat: no-repeat;
   background-position-y: 80px;
@@ -38,29 +100,13 @@ body {
     background-position-y: 80px;
   }
 }
-.dropdown-menu,
-.btn {
-  font-size: $font-size-base !important;
-}
 
-a,
-.btn-link {
-  &:hover {
-    text-decoration: none;
-  }
-}
+// .animate {
+//   transition: all .3s ease;
+// }
 
-.input-group-addon_empty {
-  background-color: transparent;
-  border-color: transparent;
-}
-
-.animate {
-  transition: all .3s ease;
-}
-
-.dashboard {
-  img {
-    width: 100%;
-  }
-}
+// .dashboard {
+//   img {
+//     width: 100%;
+//   }
+// }

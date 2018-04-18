@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Demo from Adam J. Jolicoeur">
+    <meta name="author" content="Adam J. Jolicoeur">
+    <title>Centered Navigation Demo</title>
+    <!-- Bootstrap Core CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+      crossorigin="anonymous">
+    <!-- PatternFly Core -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/patternfly/3.41.0/css/patternfly.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/patternfly/3.24.0/css/patternfly-additions.min.css">
+    <!-- Custom Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Overpass+Mono" rel="stylesheet">
+    <!-- Animate.CSS Library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <!-- Theme CSS -->
+    <link href="css/site.min.css" rel="stylesheet">
+    <!-- <link href="css/mobile.min.css" rel="stylesheet"> -->
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+  </head>
+  <body>
+    <div>
+      <header>
+        <nav class="nav-grid center-nav">
+          <div class="nav-grid-left">
+          </div>
+          <div class="nav-grid-center">
+            <div class="dropdown">
+              <a id="dLabel" class="btn btn-link" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <span class="center-nav--center_user-name">
+                  <span class="fa fa-home"></span> ajolicoeur
+                </span>
+                <span class="center-nav--center_vertical-divider"> | </span>
+                <!-- <span class="pficon-ok fa-lg"></span> -->
+                <span class="caret"></span>
+              </a>
+              <ul class="dropdown-menu center-nav center-nav--user-dropdown_list animated fadeInDown" aria-labelledby="dLabel">
+                <div id="centerNavBase">
+                  <ul class="center-nav--user-list">
+                    <li class="center-nav--user-list_section">
+                      <span class="mobile-hide">
+                        <p>
+                          <div class="input-group input-group-search">
+                            <input type="text" class="form-control" placeholder="Search for...">
+                            <span class="input-group-btn">
+                              <button class="btn btn-default" type="button"><span class="fa fa-search"></span></button>
+                            </span>
+                          </div>
+                        </p>
+                        <p>RECENT SPACES</p>
+                        <ul>
+                          <li>
+                            <a href="pages/page1.html">
+                              osio_uxd
+                            </a>
+                          </li>
+                          <li>
+                            <a href="#">
+                              openshift.io
+                            </a>
+                          </li>
+                          <li>
+                            <a href="#">
+                              iPaaS
+                            </a>
+                          </li>
+                        </ul>
+                      </span>
+                      <p>SYSTEM STATUS</p>
+                      <ul>
+                        <li>
+                          <a href="#">
+                            <span class="fa fa-check-circle-o"></span> Jenkins
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <span class="fa fa-check-circle-o"></span> Console
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <span class="fa fa-check-circle-o"></span> Analytics
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <span class="fa fa-check-circle-o"></span> GitHub
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <span class="fa fa-check-circle-o"></span> Forge
+                          </a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li class="center-nav--user-list_section">
+                      <p>JUMP TO CONSOLE</p>
+                      <ul>
+                        <li>
+                          <a href="#">Developer Studio</a>
+                        </li>
+                        <li>
+                          <a href="#">Fuse</a>
+                        </li>
+                        <li>
+                          <a href="#">OpenShift</a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <span class="fa fa-home"></span> OpenShift.io</a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li class="center-nav--user-list_last">
+                      <p>CURRENT CONSOLE</p>
+                      <ul>
+                        <li>
+                          <a href="#">Documentation</a>
+                        </li>
+                        <li>
+                          <a href="#">About OpenShift.io</a>
+                        </li>
+                      </ul>
+                    </li>
+                  </ul>
+                </div>
+              </ul>
+            </div>
+          </div>
+          <div class="nav-grid-right">
+            <div class="dropdown">
+              <div class="center-nav--right">
+                <a id="spacesDropdown" class="btn btn-link" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  <span class="fa fa-th-large fa-lg"></span>
+                </a>
+                <ul class="dropdown-menu center-nav--spaces-dropdown_list animated fadeInDown" aria-labelledby="spacesDropdown">
+                  <div id="spacesDropdownBase">
+                    <ul class="center-nav--user-list">
+                      <li>
+                        <p>RECENT SPACES</p>
+                        <ul class="recent-spaces-list">
+                          <li>
+                            <span class="fa fa-circle"></span> ajolicoeur
+                            <a href="pages/page1.html">osio_uxd</a>
+                          </li>
+                          <li>
+                            <span class="fa fa-circle"></span> ajolicoeur
+                            <a href="#">JBoss_navigation</a>
+                          </li>
+                          <li>
+                            <span class="fa fa-circle"></span> ajolicoeur
+                            <a href="#">iPaaS</a>
+                          </li>
+                        </ul>
+                      </li>
+                      <li class="center-nav--user-list_last">
+                        <ul>
+                          <li>
+                            <a href="#">
+                              <span class="fa fa-plus-circle"></span> Create Space?
+                            </a>
+                          </li>
+                          <!-- <li>
+                            <a href="#">
+                              <span class="fa fa-th"></span> About OpenShift.io
+                            </a>
+                          </li> -->
+                        </ul>
+                      </li>
+                    </ul>
+                  </div>
+                </ul>
+              </div>
+            </div>
+            <div class="center-nav--divider">
+              |
+            </div>
+            <div class="center-nav--icon">
+              <a href="#" class="btn btn-link search-button">
+                <span class="fa fa-search"></span>
+                <div class="input-group site-search hide animated fadeInRight">
+                  <input class="form-control input-lg" type="text" placeholder="search" />
+                  <span class="input-group-addon search-button-close"><i class="fa fa-remove"></i></span>
+                </div>
+              </a>
+            </div>
+          </div>
+        </nav>
+        <nav class="nav-grid-secondary secondary-nav">
+          <div class="secondary-nav--links">
+            <a class="btn btn-link active">
+              Dashboard
+            </a>
+            <a class="btn btn-link">
+              User Settings
+            </a>
+          </div>
+        </nav>
+      </header>
+      <section>
+        <div class="dashboard desktop-hide">
+          <img src="images/osio.png">
+        </div>
+        <div class="dashboard mobile-hide">
+          <img src="images/osio_home_mobile.png">
+        </div>
+      </section>
+    </div>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Bootstrap's JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+      crossorigin="anonymous"></script>
+    <!-- PatternFly's JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/patternfly/3.41.0/js/patternfly.min.js"></script>
+    <!-- Site JavaScript -->
+    <script src="js/site.min.js"></script>
+  </body>
+</html>

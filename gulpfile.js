@@ -95,7 +95,14 @@ gulp.task('serve', ['sass', 'minify-js'], function () {
   browserSync.init({
     server: {
       baseDir: "./"
-    }
+    },
+    ui: {
+      port: 8001 // customize port for browserSync UI
+    },
+    browser: ["google chrome"], // overrides system default
+    port: 8080, // use 8080 to prevent conflicts with other localhosts
+    reloadOnRestart: true,
+    notify: false // prevent the browserSync notification from appearing
   });
   gulp.watch('js/*.js', ['js-watch']);
   gulp.watch('sass/*.scss', ['sass-watch']);

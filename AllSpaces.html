@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="centered navigation demo">
+    <meta name="author" content="Adam J. Jolicoeur">
+    <title>Centered Navigation Demo</title>
+    <!-- Animate.CSS Library -->
+    <link href="css/animate.min.css" rel="stylesheet">
+    <!-- Theme CSS -->
+    <link href="css/site.min.css" rel="stylesheet">
+  </head>
+  <body class="background-cover-all-spaces">
+    <nav class="nav-grid space-navigation">
+      <div class="nav-grid-left">
+        <a href="index.html"><span class="fa fa-home"></span></a> | <span class="fa fa-angle-down"></span>
+      </div>
+      <div class="nav-grid-center">
+        <div id="centerMenu" class="center-menu">
+          <div class="user-dropdown">
+            <span class="fa fa-th"></span> <b>Spaces</b> <span class="fa fa-angle-down"></span>
+          </div>
+          <div class="center-menu-content hide">
+            <ul>
+              <li class="nav-dropdown-title">RECENT SPACES</li>
+              <li>OpenShift</li>
+              <li>JBoss</li>
+              <li>iPaas</li>
+              <li>
+                <a href="osio.html">
+                  <span class="fa fa-home"></span> OpenShift.io
+                </a>
+              </li>
+            </ul>
+            <ul class="nav-dropdown-footer">
+              <li>
+                <a href="#">
+                  <span class="fa fa-plus-circle"></span> Create Space?
+                </a>
+              </li>
+              <li>
+                <a href="AllSpaces.html">
+                  <span class="fa fa-th"></span> View Spaces
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="nav-grid-right">
+        <div id="spaceMenu" class="right-menu">
+          <span class="fa fa-search search-site"></span>
+          Search
+          <input class="search-site-input" type="text" placeholder="search site..." aria-placeholder="search">
+          <div class="right-menu-content hide">
+            <ul>
+              <li>Item 1</li>
+              <li>Item 2</li>
+              <li>Item 3</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <div class="nav-grid-secondary">
+      <div>
+      </div>
+      <div class="secondary-nav--links">
+        <a href="#">&nbsp;</a>
+      </div>
+      <div>
+      </div>
+    </div>
+    <section>
+    </section>
+  </body>
+  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <!-- Site JavaScript -->
+  <script src="js/site.min.js"></script>
+</html>
