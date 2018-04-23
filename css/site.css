@@ -2336,7 +2336,7 @@
 
 .nav-grid, .nav-grid-secondary {
   display: grid;
-  grid-template-columns: repeat(3, 1fr); }
+  grid-template-columns: 100px 1fr 100px; }
 
 .nav-grid {
   font-size: 2em;
@@ -2369,6 +2369,7 @@
     .nav-grid-right .fa-search {
       margin-left: 10px; }
   .nav-grid-secondary {
+    grid-template-columns: 1fr 100% 1fr;
     background-color: #030303;
     margin-top: 47px;
     margin-right: -8px;
@@ -2414,13 +2415,22 @@
 
 .nav-dropdown-recent-spaces {
   display: grid;
-  grid-template-columns: 25px 1fr; }
+  grid-template-columns: 20px 1fr; }
   .nav-dropdown-recent-spaces:first-child {
     color: #d1d1d1; }
+  .nav-dropdown-recent-spaces-user {
+    border-radius: 50%;
+    width: 15px;
+    vertical-align: middle; }
+  .nav-dropdown-recent-spaces-username {
+    font-size: .8rem;
+    color: #72767b; }
+  .nav-dropdown-recent-spaces-name {
+    margin-left: -15px; }
 
 .center-menu-content {
   width: 250px;
-  margin-left: -35px; }
+  margin-left: -17px; }
   .center-menu-content ul {
     margin: 5px 0 0 0;
     padding: 10px 20px; }
