@@ -2338,6 +2338,12 @@
   display: grid;
   grid-template-columns: 100px 1fr 100px; }
 
+.notification-drawer {
+  position: fixed;
+  top: 88px;
+  right: 0;
+  display: none; }
+
 .nav-grid {
   font-size: 2em;
   background-color: #030303;
@@ -2367,6 +2373,8 @@
     .nav-grid-right .fa-th-large {
       margin-right: 10px; }
     .nav-grid-right .fa-search {
+      margin-left: 10px; }
+    .nav-grid-right .fa-bell {
       margin-left: 10px; }
   .nav-grid-secondary {
     grid-template-columns: 1fr 100% 1fr;
@@ -2460,7 +2468,7 @@
 .space-dropdown {
   position: absolute;
   top: 10px;
-  right: 50px;
+  right: 100px;
   transition: linear 1s; }
   .space-dropdown:hover {
     cursor: pointer; }
@@ -2474,7 +2482,7 @@
   opacity: .5; }
   .search-site-input-show {
     top: 12px;
-    right: 50px;
+    right: 100px;
     width: 225px;
     opacity: 1; }
 
@@ -2486,7 +2494,7 @@
 .search-expanded-space {
   position: absolute;
   top: 10px;
-  right: 300px; }
+  right: 350px; }
 
 .search-expanded-centered {
   position: absolute;
@@ -2600,43 +2608,43 @@ body {
   background: url("../images/HomeDashboard.png");
   background-size: cover;
   background-repeat: no-repeat;
-  background-position-y: 80px; }
+  background-position-y: 38px; }
 
 .background-cover-space {
   background: url("../images/SpaceDashboard.png");
   background-size: cover;
   background-repeat: no-repeat;
-  background-position-y: 80px; }
+  background-position-y: 38px; }
 
 .background-cover-user-settings {
   background: url("../images/UserSettings.png");
   background-size: cover;
   background-repeat: no-repeat;
-  background-position-y: 80px; }
+  background-position-y: 40px; }
 
 .background-cover-space-settings {
-  background: url("../images/Areas.png");
+  background: url("../images/SpaceSettings.png");
   background-size: cover;
   background-repeat: no-repeat;
-  background-position-y: 53px; }
+  background-position-y: 38px; }
 
 .background-cover-plan {
   background: url("../images/Planner.png");
   background-size: cover;
   background-repeat: no-repeat;
-  background-position-y: 53px; }
+  background-position-y: 38px; }
 
 .background-cover-create {
   background: url("../images/Create.png");
   background-size: cover;
   background-repeat: no-repeat;
-  background-position-y: 53px; }
+  background-position-y: 38px; }
 
 .background-cover-all-spaces {
   background: url("../images/ViewAllSpaces.png");
   background-size: cover;
   background-repeat: no-repeat;
-  background-position-y: 80px; }
+  background-position-y: 40px; }
 
 @media (max-width: 900px) {
   .background-cover {
