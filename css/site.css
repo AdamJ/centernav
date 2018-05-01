@@ -2424,6 +2424,14 @@
 .nav-dropdown-recent-spaces {
   display: grid;
   grid-template-columns: 20px 1fr; }
+  .nav-dropdown-recent-spaces a {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    max-width: 200px;
+    margin-left: -17px;
+    padding-left: 17px;
+    display: block; }
   .nav-dropdown-recent-spaces:first-child {
     color: #d1d1d1; }
   .nav-dropdown-recent-spaces-user {
@@ -2453,7 +2461,7 @@
 .right-menu-content {
   position: fixed;
   right: 60px;
-  width: 235px; }
+  width: 245px; }
   .right-menu-content ul {
     margin: 5px 0 0 0;
     padding: 10px 20px; }
